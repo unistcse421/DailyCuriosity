@@ -25,7 +25,7 @@ Since the project is not yet finished, there are a number of limitations.
 
 Should work on any modern (or nearly-modern) configuration of PHP and MySQL with a decent web server. More specifically, the code requires PHP 5.2 or later.
 
-At the root directory (which is where ```index.htm``` and ```dc.php```, among other things, reside), create a file named ```db.php``` with the following contents:
+At the root directory (which is where ```index.html``` and ```dc.php```, among other things, reside), create a file named ```db.php``` with the following contents:
 
 ```php
 <?php
