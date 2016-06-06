@@ -1,0 +1,10 @@
+{
+  "name": "daily-curiosity",
+  "authors": [
+    "Miyu Tokoromi <cppig1995@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery-ui": "^1.11.4",
+    "bootstrap": "^3.3.6"
+  }
+}

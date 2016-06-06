@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DailyCuriosity</title>
+<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="dc.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+<div class="header clearfix">
+<nav>
+<ul class="nav nav-pills pull-right">
+<li role="presentation"><a href="#" data-dc-action="list">모든 주제 보기</a></li>
+<li role="presentation"><a href="#" data-dc-action="write" data-action-subtype="topic" data-action-target="0">새 주제</a></li>
+<li role="presentation"><a href="#" data-dc-action="write" data-action-subtype="post" data-action-target="0">이 주제에 의견 작성</a></li>
+</ul>
+</nav>
+<h3 class="text-muted">DailyCuriosity</h3>
+</div>
+
+<div class="jumbotron">
+<h1>자유롭게 의견을 나누세요!</h1>
+<p class="lead">아래의 목록에서 주제를 클릭하시면 다른 사람들의 의견을 살펴보고 자신의 의견을 작성하실 수 있습니다. 관심 가는 주제가 없으신가요? 새 주제를 투고하세요.</p>
+<p><a href="#" class="btn btn-lg btn-primary" data-dc-action="write" data-action-subtype="topic" data-action-target="0" role="button">새 주제 투고</a></p>
+</div>
+
+<div class="row">
+<div id="main" class="col-lg-12">
+</div>
+</div>
+
+<div id="positions" class="row marketing">
+</div>
+
+<div class="row">
+<div id="posts" class="col-lg-12">
+</div>
+</div>
+
+<div class="row">
+<div class="col-lg-12">
+<div id="topics" class="list-group">
+</div>
+</div>
+</div>
+
+<footer class="footer">
+<p>DailyCuriosity &copy; 2016</p>
+</footer>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+<span class="sr-only">펼치기/접기</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">DailyCuriosity</a>
+</div>
+<div class="collapse navbar-collapse" id="navbar-collapse-1">
+<ul class="nav navbar-nav">
+<li><a href="#" data-dc-action="list">모든 주제 보기</a></li>
+<li><a href="#" data-dc-action="write" data-action-subtype="topic" data-action-target="0">새 주제</a></li>
+<li><a href="#" data-dc-action="write" data-action-subtype="post" data-action-target="0">이 주제에 의견 작성</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+</div>
+
+<div class="modal fade" id="writeModal" tabindex="-1" role="dialog" aria-labelledby="writeModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="writeModalLabel"></h4>
+</div>
+<div class="modal-body">
+<form>
+<div class="form-group" id="entryTitleGroup">
+<label for="message-text" class="control-label">제목:</label>
+<input type="text" class="form-control" id="entryTitle">
+</div>
+<div class="form-group">
+<label for="message-text" class="control-label">내용:</label>
+<textarea class="form-control" id="entryText"></textarea>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-dismiss="modal">게시하지 않고 닫기</button>
+<button type="button" class="btn btn-primary">확인</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="historyModal" tabindex="-1" role="dialog" aria-labelledby="historyModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+<h4 class="modal-title" id="historyModalLabel"></h4>
+</div>
+<div class="modal-body" id="historyModalBody">
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="dc.js"></script>
+</body>
+</html>
